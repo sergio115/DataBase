@@ -7,37 +7,20 @@ using System.Text;
 namespace DataBase.Models
 {
     
-    public class ProductModel:INotifyPropertyChanged
+    public class ProductModel
     {
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private int id;
-        private string name;
-        private string description;
-        private string price;
-
-        public ProductModel() {
-
-        }
 
         [PrimaryKey, AutoIncrement]
-        public int Id {
-            get => id;
-            set => id = value;
-        }
+        public int ID { get; set; }
         
-        public string Name {
-            get => name;
-            set => name = value;
-        }
-        public string Description {
-            get => description;
-            set => description = value;
-        }
-        public string Price {
-            get => price;
-            set => price = value;
-        }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public int Price { get; set; }
+        public bool Done { get; set; }
 
+        public ProductModel()
+        {
+
+        }
     }
 }
