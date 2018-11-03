@@ -1,4 +1,5 @@
 ﻿using DataBase.Data;
+using DataBase.Views;
 using System;
 using System.IO;
 using Xamarin.Forms;
@@ -15,7 +16,10 @@ namespace DataBase
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            var nav = new NavigationPage(new ProductListPage());
+            nav.BarBackgroundColor = Color.Azure;
+            nav.BarTextColor = Color.White;
+            MainPage = nav;
         }
 
         public static TodoItemDatabase Database

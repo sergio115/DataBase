@@ -5,11 +5,9 @@ using System.ComponentModel;
 using System.Text;
 
 namespace DataBase.Models
-{
-    
+{    
     public class ProductModel
     {
-
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
         

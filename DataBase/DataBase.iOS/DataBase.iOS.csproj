@@ -92,6 +92,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="TextToSpeech_iOS.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -159,5 +160,11 @@
       <Project>{48B07478-FE1D-40AD-A434-978564593981}</Project>
       <Name>DataBase</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\outline_add_box_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\outline_edit_black.png" />
   </ItemGroup>
 </Project>
